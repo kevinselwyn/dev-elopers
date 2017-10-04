@@ -1,13 +1,13 @@
-#/dev/elopers
+# /dev/elopers
 
 Linux pseudo-device that dispenses timeless Steve Ballmer knowledge
 
-##Installation
+## Installation
 
-First, install the `module-assistant` package:
+First, install the necessary packages:
 
 ```bash
-sudo apt-get install module-assistant
+sudo apt-get install make module-assistant linux-headers-`uname -r`
 ```
 
 Then, install the device:
@@ -22,7 +22,14 @@ To uninstall the device:
 sudo make uninstall
 ```
 
-##Usage
+To install using [Vagrant](https://www.vagrantup.com/):
+
+```bash
+vagrant up && vagrant ssh
+sudo make install
+```
+
+## Usage
 
 ```
 $ cat /dev/elopers | mplayer -cache 1024 -
@@ -30,6 +37,6 @@ $ cat /dev/elopers | mplayer -cache 1024 -
 
 ![Steve Ballmer](https://i.imgur.com/gbHzjkD.gif)
 
-##Acknowledgements
+## Acknowledgements
 
 All credit to Mr. Ballmer, his sweaty shirt, and semantic satiation.

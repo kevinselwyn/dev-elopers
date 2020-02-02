@@ -2,6 +2,7 @@
 #include <linux/init.h>
 #include <linux/miscdevice.h>
 #include <linux/module.h>
+#include <linux/uaccess.h>
 #include <asm/uaccess.h>
 #include "dev-elopers.h"
 
